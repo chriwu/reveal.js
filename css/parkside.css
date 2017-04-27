@@ -20,7 +20,8 @@ html.sl-authors .author {
     margin-bottom: 10px; }
   html.sl-authors .author ul {
     margin: 0px 0 0 0;
-    padding: 0; }
+    padding: 0;
+    text-align: left; }
     html.sl-authors .author ul li {
       list-style-type: none;
       margin: 0 0 40px 0; }
@@ -61,14 +62,16 @@ body {
     text-transform: none; }
   .reveal ul {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    text-align: center; }
     .reveal ul li {
-      list-style-type: square; }
+      list-style-type: none; }
   .reveal p, .reveal li, .reveal q {
     margin: 20px 0;
-    line-height: 1.5;
-    font-weight: 300;
-    font-size: 80%; }
+    line-height: 1.3;
+    font-weight: 100;
+    font-size: 80%;
+    font-style: normal; }
   .reveal .controls {
     left: 10px !important; }
     .reveal .controls .navigate-left, .reveal .controls .navigate-left.enabled {
