@@ -173,6 +173,13 @@ body {
       box-shadow: none;
   }
 
+  span#sha {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    font: 14px "courier new";    
+  }
+
   .controls {
     left: 10px !important;
 
