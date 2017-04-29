@@ -70,39 +70,17 @@ html.sl-collaboration-aspects {
 }
 
 
-html.sl-codesample {
+html.sl-img-codesample {
 
   .slide-background {
-    opacity: 0.6 !important;
+    opacity: 0.8 !important;
   }
 }
 
+html.sl-img-collaboration {
 
-html.sl-big-picture {
-
-  section {
-
-    /*width: 1250px !important;
-    margin: 0 !important;
-    left: -150px;
-*/
-    .column {
-
-      float: left;
-      width: 50%;
-
-
-      ol {
-
-        text-align: left;
-        margin: 40px 0 0 0;
-        width: 75%;
-
-        li {
-          font-size: 26px;
-        }
-      }
-    }
+  .slide-background {
+    opacity: 0.8 !important;
   }
 }
 

@@ -37,23 +37,11 @@ html.sl-company .slide-background {
 html.sl-collaboration-aspects .slide-background {
   opacity: 0.2 !important; }
 
-html.sl-codesample .slide-background {
-  opacity: 0.6 !important; }
+html.sl-img-codesample .slide-background {
+  opacity: 0.8 !important; }
 
-html.sl-big-picture section {
-  /*width: 1250px !important;
-    margin: 0 !important;
-    left: -150px;
-*/ }
-  html.sl-big-picture section .column {
-    float: left;
-    width: 50%; }
-    html.sl-big-picture section .column ol {
-      text-align: left;
-      margin: 40px 0 0 0;
-      width: 75%; }
-      html.sl-big-picture section .column ol li {
-        font-size: 26px; }
+html.sl-img-collaboration .slide-background {
+  opacity: 0.8 !important; }
 
 html.sl-big-picture h3 {
   position: relative;
