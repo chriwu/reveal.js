@@ -66,6 +66,7 @@
 
 						<aside class="notes" data-markdown>
 							- past vs present: handing over a floppy disk, index-numbering files
+							- show floppy: it's not a 3d-printed print icon
 							- Team level is obvious: organization, meetings (allhands, standups), structures (jira, confluence)
 							- Works great in GDocs, but: in code? (show two lines of code amd zoom out), across teams amd oceans?
 							- Organization (University or Company) => has to provide infrastructure, workflows, culture, tools to back this up
@@ -310,7 +311,7 @@
 
 								# create deployment and service
 								kubectl run demo --image=eu.gcr.io/ps-teconomy-2017/ps-tec-17:latest --port 8000
-								kubectl expose deployment demo --type=LoadBalancer --port 8000
+								kubectl expose deployment demo --type=LoadBalancer --port 80 --target-port 8000
 
 								# update image
 								kubectl set image deployment/demo demo=eu.gcr.io/ps-teconomy-2017/ps-tec-17:latest
