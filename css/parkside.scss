@@ -135,6 +135,7 @@ body {
   }
 }
 
+
 .reveal {
   font-family: "proxima-nova", sans-serif;
 
@@ -173,12 +174,18 @@ body {
       box-shadow: none;
   }
 
-  span#sha {
+  #sha {
     position: fixed;
     right: 10px;
     top: 10px;
-    font: 14px "courier new";    
+    font: 14px "courier new";
+    display: none;
+
+    &.visible {
+      display: block;
+    }
   }
+  
 
   .controls {
     left: 10px !important;

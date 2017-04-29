@@ -92,11 +92,14 @@ body {
     font-size: 16px; }
   .reveal pre {
     box-shadow: none; }
-  .reveal span#sha {
+  .reveal #sha {
     position: fixed;
     right: 10px;
     top: 10px;
-    font: 14px "courier new"; }
+    font: 14px "courier new";
+    display: none; }
+    .reveal #sha.visible {
+      display: block; }
   .reveal .controls {
     left: 10px !important; }
     .reveal .controls .navigate-left, .reveal .controls .navigate-left.enabled {

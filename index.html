@@ -393,13 +393,16 @@
 		<script>
 			Reveal.initialize({
 				history: true,
-				//defaultTiming: 10,
-				//margin: 0,
+
+				keyboard: {
+					86: function () {
+						document.querySelector("#sha").classList.toggle("visible");
+					},
+				},
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					//{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
 				]
 			});
