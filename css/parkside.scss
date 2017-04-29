@@ -218,6 +218,8 @@ body {
   
 
   .controls {
+    display: none !important;  /* turn back on if necessary */
+
     left: 10px !important;
 
     .navigate-left,.navigate-left.enabled {

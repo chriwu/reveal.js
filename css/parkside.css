@@ -117,6 +117,8 @@ body {
   .reveal #ps-version-number {
     font-family: "courier new"; }
   .reveal .controls {
+    display: none !important;
+    /* turn back on if necessary */
     left: 10px !important; }
     .reveal .controls .navigate-left, .reveal .controls .navigate-left.enabled {
       border-right-color: #fff; }

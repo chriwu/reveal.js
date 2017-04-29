@@ -303,9 +303,9 @@
 							<li class="fragment">Kubernetes hot-swaps image on running cluster</li>
 							<li class="fragment">Status messages are send to Slack</li>
 						</ol>
-						<p>
+						<p class="fragment">
 							Git SHA:&nbsp;
-							<span id="ps-version-number" class="fragment">PS_VERSION_NUMBER</span>
+							<span id="ps-version-number">PS_VERSION_NUMBER</span>
 						</p>
 
 
@@ -328,7 +328,7 @@
 								docker build -t "eu.gcr.io/ps-teconomy-2017/ps-tec-17:latest" .
 								docker run -p 80:8000 eu.gcr.io/ps-teconomy-2017/ps-tec-17:latest
 
-								# tag image and push to GCP registry
+								# push image to GCP registry
 								gcloud docker — push eu.gcr.io/ps-teconomy-2017/ps-tec-17:latest
 
 								# create deployment and service
@@ -350,7 +350,7 @@
 					<div class="author">
 						<h3>Chris Werding</h3>
 						<ul>
-							<li>VP of Engineering</li>
+							<li>VP of Engineering<br/>5 years @ Parkside</li>
 							<li>Team Lead / Software Architect / Project Manager</li>
 							<li>Dotnet / Java / Javscript / Scalability / Architecture / Design Patterns</li>
 						</ul>
@@ -358,7 +358,7 @@
 					<div class="author">
 						<h3>Nelle Simic</h3>
 						<ul>
-							<li>Principal Software Engineer</li>
+							<li>Principal Software Engineer<br/>12 years @ Parkside</li>
 							<li>Architect / Guru / Engineer / Consultant</li>
 							<li>Java / Algorithmics / React / AngularJS / Graphics Engineering</li>
 						</ul>
@@ -378,8 +378,10 @@
 					<p>45+ employees / 15 nations / 10 languages / international clients / large-scale projects / headquarters @Graz</p>
 
 					<aside class="notes" data-markdown>
+						### Claims
 						- stuff you've seen in this demo: we do it everyday
 						- best job in the world
+						- most of your awake time is spent on the job - rather spend it with people you enjoy working with
 						- diversity is always an asset
 					</aside>
 				</section>
