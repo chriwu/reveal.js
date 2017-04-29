@@ -279,13 +279,13 @@
 					<section data-state="sl-big-stateflow">
 						<h3>The Big Picture</h3>
 						<ol>
-							<li class="fragment">Git commit hook => triggers a CircleCI build job</li>
-							<li class="fragment">CircleCI builds artifacts => new container image is created</li>
-							<li class="fragment">Image is pushed by CircleCI to GKE registry</li>
+							<li class="fragment">Git commit hook => triggers CircleCI build</li>
+							<li class="fragment">CircleCI builds artifacts => new container image</li>
+							<li class="fragment">Image is pushed to GCP registry</li>
 							<li class="fragment">Kubernetes is hot-swapping image on running cluster</li>
-							<li class="fragment">Cluster reboots and starts delivering the new version</li>
-							<li class="fragment">Every tool sends progress / status messages to Slack</li>
+							<li class="fragment">Status messages send to Slack</li>
 						</ol>
+						<p id="ps-version-number" class="fragment">PS_VERSION_NUMBER</p>
 
 						<aside class="notes" data-markdown></aside>
 					</section>
@@ -393,7 +393,6 @@
 		<script>
 			Reveal.initialize({
 				history: true,
-
 				keyboard: {
 					86: function () {
 						document.querySelector("#sha").classList.toggle("visible");
