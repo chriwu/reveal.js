@@ -87,6 +87,11 @@ body {
     font-weight: 100;
     font-size: 80%;
     font-style: normal; }
+  .reveal code {
+    background: transparent;
+    font-size: 16px; }
+  .reveal pre {
+    box-shadow: none; }
   .reveal .controls {
     left: 10px !important; }
     .reveal .controls .navigate-left, .reveal .controls .navigate-left.enabled {

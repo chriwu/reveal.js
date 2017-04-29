@@ -164,6 +164,15 @@ body {
     font-style: normal;
   }
 
+  code {
+      background: transparent;
+      font-size: 16px;
+  }
+
+  pre {
+      box-shadow: none;
+  }
+
   .controls {
     left: 10px !important;
 
