@@ -10,4 +10,6 @@ kubectl set image deployment/demo demo=eu.gcr.io/${PROJECT_NAME}/${IMAGE_NAME}:$
 
 SERVICE_IP=`kubectl get services | grep demo | awk -F ' ' '{print $3}'`
 echo "Kubernetes service IP: $SERVICE_IP"
+echo "Git SHA: $CIRCLE_SHA1"
+
 echo url="https://www.duckdns.org/update?domains=pstec&token=7b1e3eed-bc64-4edb-a370-52526ccbfba1&ip=$SERVICE_IP" | curl -k -K -
