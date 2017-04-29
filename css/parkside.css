@@ -34,7 +34,7 @@ html.sl-authors .slide-background {
 html.sl-company .slide-background {
   opacity: 0.2 !important; }
 
-html.sl-teamlevel .slide-background {
+html.sl-collaboration-aspects .slide-background {
   opacity: 0.2 !important; }
 
 html.sl-codesample .slide-background {
@@ -54,6 +54,20 @@ html.sl-big-picture section {
       width: 75%; }
       html.sl-big-picture section .column ol li {
         font-size: 26px; }
+
+html.sl-big-picture h3 {
+  position: relative;
+  top: -110px !important; }
+
+html.sl-big-picture .slide-background {
+  opacity: 1.0 !important;
+  background-position-y: 100px;
+  background-size: 70%; }
+
+html.sl-magic .slide-background {
+  opacity: 0.35 !important;
+  background-position-y: 100px;
+  background-size: 70%; }
 
 html.sl-merci .reveal #hiring {
   padding-top: 70px; }
@@ -121,4 +135,4 @@ body {
       width: 60%; }
     .reveal section img#schema {
       margin: 0px 0;
-      width: 80%; }
+      width: 85%; }

@@ -31,7 +31,7 @@
 					<aside class="notes" data-markdown>
 						### quick intro
 						His name is Nelle, and I am Chris.
-						
+
 						### opening questions
 						- how many of you are taking software engineering classes?
 						- how many of you have been working on teams with more than 2 people?
@@ -43,42 +43,44 @@
 				<!-- slide.collaboration -->
 				<section data-state="sl-collaboration">
 					<h3>Collaboration</h3>
-					<p>What is it? And why should you care?</p>
-					<ul class="fragment">
-						<li>Team Level</li>
-						<li>Code Level</li>
-					</ul>
+					<p class="fragment">What is it? And why should you care?</p>
+					<p class="fragment">Split up the work, distribute<br/>the tasks - and get things done!</p>
 
 					<aside class="notes" data-markdown>
-						### What
-						- deadline approaching. how do you get things done / out of the door?
+						### Scenario
+						- deadline approaching. get things out of the door
 						- split up the work among your teammates
 						- if separation is good - collab is easy
-						- collaboration: saves your ass on the deadline
-						- one potential sideeffect in software projects: merge hell
 
 						### Why
+						- cope with last minute problems
+						- Murphys law: on day d-1
+						- scale out the work
+						- problems: floppy disk breaks, merge hell, hidden complexity
+
 					</aside>
 				</section>
 
 
-				<!-- slide.teamlevel -->
+				<!-- slide.collaboration-aspects -->
 				<section>
-					<section data-state="sl-teamlevel">
-						<h3>The team level</h3>
-						<ul class="fragment">
-							<li>The past vs. the present</li>
-							<li>All Hands / Scrum / Standups</li>
-							<li>Google Docs: save as you go / concurrent editing</li>
-						</ul>
+					<section data-state="sl-collaboration-aspects">
+						<h3>Aspects of collaboration</h3>
+						<p class="fragment">On Organization level: it's all about (infra)structure <span class="fragment">and workflows</span></p>
+						<p class="fragment">On Code level: it's about tools ... <span class="fragment">and workflows</span></p>
 
 						<aside class="notes" data-markdown>
+							### Orga
+							- office, meetingrooms, network connections, etc.
+							- workflows: All-hands, standups, scrum meetings
+							- but most importantly: CULTURE
+								- example: include TDD budget in project planning phase (TDD: 25% overhead)
+							
+							## Code
 							- past vs present: handing over a floppy disk, index-numbering files
-							- show floppy: it's not a 3d-printed print icon
-							- Team level is obvious: organization, meetings (allhands, standups), structures (jira, confluence)
-							- Works great in GDocs, but: in code? (show two lines of code amd zoom out), across teams amd oceans?
-							- Organization (University or Company) => has to provide infrastructure, workflows, culture, tools to back this up
-							- Culture: if testing is not calculated in budget, nobody will do it (TDD: 25% overhead)
+							- show floppy: it's NOT a 3d-printed print icon
+							- Works great in GDocs, but: in code?
+							- Difficulties: large teams, oceans, team members
 						</aside>
 					</section>
 
@@ -277,26 +279,39 @@
 
 				<!-- slide.big-picture -->
 				<section>
-					<section data-state="sl-big-picture">
+					<section data-state="sl-big-picture" data-background="img/big-picture.svg">
 						<h3>The Big Picture</h3>
-						<img id="schema" src="img/big-picture.svg" alt="The Big Picture - deployment schema" />
+						<!-- <img id="schema" src="img/big-picture.svg" alt="The Big Picture - deployment schema" /> -->
 
-						<aside class="notes" data-markdown></aside>
+						<aside class="notes" data-markdown>
+							### Definitions
+							- Slack: com tool
+							- Github: online version control repository
+							- CircleCI: Continuous Integration / Continuous Deployment platform
+							- Kubernetes: Cluster manager for Docker containers
+							- GKE / Google Container Engine: PaaS, built on Kubernetes
+						</aside>
 					</section>
 
 
-					<section data-state="sl-big-stateflow">
-						<h3>The Big Picture</h3>
+					<section data-state="sl-magic" data-background="img/big-picture.svg" data-transition="zoom">
+						<h3>The magic</h3>
 						<ol>
 							<li class="fragment">Git commit hook => triggers CircleCI build</li>
 							<li class="fragment">CircleCI builds artifacts => new container image</li>
 							<li class="fragment">Image is pushed to GCP registry</li>
-							<li class="fragment">Kubernetes is hot-swapping image on running cluster</li>
-							<li class="fragment">Status messages send to Slack</li>
+							<li class="fragment">Kubernetes hot-swaps image on running cluster</li>
+							<li class="fragment">Status messages are send to Slack</li>
 						</ol>
-						<p id="ps-version-number" class="fragment">PS_VERSION_NUMBER</p>
+						<p>
+							Git SHA:&nbsp;
+							<span id="ps-version-number" class="fragment">PS_VERSION_NUMBER</span>
+						</p>
 
-						<aside class="notes" data-markdown></aside>
+
+						<aside class="notes" data-markdown>
+							
+						</aside>
 					</section>
 
 
@@ -310,11 +325,10 @@
 								gcloud config set container/cluster cluster-ps-tec-17
 
 								# build docker image and test it
-								docker build -t "ps-tec-17:latest" .
-								docker run -p 84:8000 ps-tec-17:latest 
+								docker build -t "eu.gcr.io/ps-teconomy-2017/ps-tec-17:latest" .
+								docker run -p 80:8000 eu.gcr.io/ps-teconomy-2017/ps-tec-17:latest
 
 								# tag image and push to GCP registry
-								docker tag ps-tec-17:latest eu.gcr.io/ps-teconomy-2017/ps-tec-17:latest
 								gcloud docker — push eu.gcr.io/ps-teconomy-2017/ps-tec-17:latest
 
 								# create deployment and service

@@ -62,7 +62,7 @@ html.sl-company {
 }
 
 
-html.sl-teamlevel {
+html.sl-collaboration-aspects {
 
   .slide-background {
     opacity: 0.2 !important;
@@ -103,6 +103,32 @@ html.sl-big-picture {
         }
       }
     }
+  }
+}
+
+
+html.sl-big-picture {
+
+  h3 {
+    position: relative;
+    top: -110px !important;
+    
+  }
+
+  .slide-background {
+    opacity: 1.0 !important;
+    background-position-y: 100px;
+    background-size: 70%;
+  }
+}
+
+
+html.sl-magic {
+
+  .slide-background {
+    opacity: 0.35 !important;
+    background-position-y: 100px;
+    background-size: 70%;
   }
 }
 
@@ -226,7 +252,7 @@ body {
 
       &#schema {
         margin: 0px 0;
-        width: 80%;
+        width: 85%;
       }
     }
   }
