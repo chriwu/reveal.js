@@ -1,3 +1,5 @@
+general:
+
 machine:
   environment:
     PROJECT_NAME: ps-teconomy-2017
@@ -31,5 +33,6 @@ test:
 
 deployment:
   prod:
+    branch: /.*/
     commands:
       - ./deploy.sh
