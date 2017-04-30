@@ -37,12 +37,6 @@ html.sl-company .slide-background {
 html.sl-collaboration-aspects .slide-background {
   opacity: 0.2 !important; }
 
-html.sl-img-codesample .slide-background {
-  opacity: 0.8 !important; }
-
-html.sl-img-collaboration .slide-background {
-  opacity: 0.8 !important; }
-
 html.sl-big-picture h3 {
   position: relative;
   top: -110px !important; }
