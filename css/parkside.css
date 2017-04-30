@@ -31,10 +31,7 @@ html.sl-authors .author {
 html.sl-authors .slide-background {
   opacity: 0.2 !important; }
 
-html.sl-company .slide-background {
-  opacity: 0.2 !important; }
-
-html.sl-collaboration-aspects .slide-background {
+html.sl-collaboration-aspects .slide-background, html.sl-company .slide-background, html.sl-tldr .slide-background {
   opacity: 0.2 !important; }
 
 html.sl-big-picture h3 {
