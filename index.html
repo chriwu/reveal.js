@@ -292,10 +292,10 @@
 
 
 				<!-- slide.big-picture -->
-				<section>
-					<section data-state="sl-big-picture" data-timing="60" data-background="img/big-picture.svg">
+				<section data-transition="fade">
+					<section data-state="sl-big-picture" data-timing="60">
 						<h3>The Big Picture</h3>
-						<!-- <img id="schema" src="img/big-picture.svg" alt="The Big Picture - deployment schema" /> -->
+						<img id="schema" src="img/big-picture.svg" alt="The Big Picture - schema" />
 
 						<aside class="notes" data-markdown>
 							### Definitions
@@ -308,7 +308,7 @@
 					</section>
 
 
-					<section data-state="sl-magic" data-timing="60" data-background="img/big-picture.svg" data-transition="zoom">
+					<section data-state="sl-magic" data-timing="60" data-background="img/big-picture.svg" data-transition="fade" data-background-transition="fade">
 						<h3>The magic</h3>
 						<ol>
 							<li class="fragment">Git commit hook => triggers CircleCI build</li>
