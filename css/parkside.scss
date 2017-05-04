@@ -54,7 +54,42 @@ html.sl-authors {
 }
 
 
-html.sl-collaboration-aspects, html.sl-company, html.sl-tldr {
+html.sl-company {
+
+  .slide-background {
+    opacity: 0.2 !important;
+  }
+
+  #badge {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 180px;
+    transform: rotate(10deg);
+  }
+
+  #booth-button {
+   
+    border-radius: 50px;
+    background-color: #E8424F;
+    color: white;
+    padding: 10px 28px 10px 28px;
+    top: 40px;
+  }
+}
+
+
+html.sl-tools {
+
+  img.tool-icons {
+    margin: 40px 20px 0 20px !important;
+    border: none;
+    width: 110px;
+  }
+}
+
+
+html.sl-collaboration-aspects, html.sl-tldr {
 
   .slide-background {
     opacity: 0.2 !important;
@@ -89,18 +124,6 @@ html.sl-magic {
     opacity: 0.35 !important;
     background-position-y: 100px;
     background-size: 70%;
-  }
-}
-
-
-html.sl-merci {
-
-  .reveal {
-
-    #hiring {
-
-      padding-top: 70px;
-    }
   }
 }
 
@@ -206,15 +229,8 @@ body {
       border: none;
       background: transparent;
       box-shadow: none;
-      margin: 0 !important;
-      padding: 0;
-
-      &#tools {
-        margin: 40px 0;
-        width: 60%;
-      }
-
-      
+      margin: 0;
+      padding: 0;           
     }
   }
 }

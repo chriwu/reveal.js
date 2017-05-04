@@ -29,77 +29,51 @@
 					<h5>Collaboration on large projects in<br/>modern software development</h5>
 
 					<aside class="notes" data-markdown>
-						### Intro
-						- His name is Nelle, and I am Chris. Yeah, really quick.
-						- Working at Parkside for 20 years in sum
-						- We are both working on one of our larger client projects: 2 oceans / west-coast / 15 people / 30 updates to live per week
-						- All the things we describe are year-proven and taken from this real-life project
+						- Hi everybody, thank you for being with us today
+						- Nelle &amp; Chris / at Parkside for 20 years in sum
 						
-						### opening questions
-						- how many of you are taking software engineering classes?
-						- how many of you have been working on teams with more than 2 people?
-						- how many of you have ever used sourcecode versioning systems
+						- QUESTION: how many of you are taking software engineering classes?
+						- ... been working on teams with more than 2 people?
+						- ... ever used sourcecode versioning systems
+
+						- both working on one of our larger client projects: 50 reqs/s / 2 oceans / west-coast / 15 people / 30 updates to live per week
+						- All the things we describe are year-proven and taken from this real-life project
+						- when you  work with 15 people on a project, collab.......
 					</aside>
 				</section>
 
 
-				<!-- slide.collaboration -->
-				<section data-state="sl-collaboration" data-timing="120">
-					<h3>Collaboration</h3>
-					<p class="fragment">What is it? And why should you care?</p>
-					<p class="fragment">It's about getting things done - better together!</p>
-
-					<aside class="notes" data-markdown>
-						### Scenario
-						- deadline approaching. get things out of the door
-						- split up the work among your teammates
-						- if separation is good - collab is easy
-
-						### Why
-						- cope with last minute problems
-						- Murphys law: on day d-1 - "what can go wrong will go wrong"
-						- scale out the work
-						- improve quality!
-						- problems: floppy disk breaks, merge hell, hidden complexity, commits disappear
-
-						### Samples
-						- hand over floppy to Nelle (it's NOT a 3d-printed print icon)
-						- show image of folks playing Nintendo
-					</aside>
-				</section>
-
-
-				<!-- slide.collaboration-aspects -->
 				<section>
-					<section data-state="sl-collaboration-aspects" data-timing="120">
-						<h3>Aspects of collaboration</h3>
+
+					<!-- slide.collaboration -->
+					<section data-state="sl-collaboration" data-timing="120">
+						<h3>Collaboration</h3>
+						<p class="fragment">What is it? And why should you care?</p>
+						<p class="fragment">It's about getting things done - better together!</p>
 						<p class="fragment">On Organization level: it's all about (infra)structure <span class="fragment">and workflows</span></p>
 						<p class="fragment">On Code level: it's about tools ... <span class="fragment">and workflows</span></p>
 
 						<aside class="notes" data-markdown>
-							### Orga
-							- office, meetingrooms, network connections, etc.
-							- workflows: All-hands, standups, scrum meetings
-							- but most importantly: CULTURE
-								- example: include TDD budget in project planning phase (TDD: 25% overhead) => !(code goes out tested)
-								- question: how many of you have heard about windows millenium? see!
-							
-							## Code
-							- past vs present: handing over a floppy disk, index-numbering files
-							- Works great in GDocs, but: in code?
-							- Difficulties: large teams, oceans, team members
+							- everybody has his strenths & weaknesses
+							- a lot of stuff to be done on the project
+							- things WILL break / murphys law
+							- => you need a good team to cope with this
+							- your orga can help: office, meetingrooms, tools, devices, network connections, etc.
+							- workflows: agile development
+							- code level: it's more complicated!
 						</aside>
 					</section>
 
 
+
+
 					<!-- slide.img-collaboration -->
-					<section data-state="sl-img-collaboration" data-timing="40" data-background="img/collage03_b.jpg" data-background-transition="slide">
+					<section data-state="sl-img-collaboration" data-timing="40" data-background="img/collaboration_collage.jpg" data-background-transition="slide">
 						<aside class="notes" data-markdown>
-							### Samples for collaboration
-							- structures
-							- workflows
-							- tools
-							- devices
+							- show floppy disk: collaboration in the past
+							- hand over floppy to Nelle (it's NOT a 3d-printed print icon) 	
+							- but most importantly: CULTURE => TDD in budget / teached
+							- QUESTION: how many of you have heard about windows millenium?
 						</aside>
 					</section>
 
@@ -107,7 +81,9 @@
 					<!-- slide.img-codesample -->
 					<section data-state="sl-img-codesample" data-timing="20" data-background="img/code_sample.png" data-background-transition="slide">
 						<aside class="notes" data-markdown>
-							Lost in translation?
+							### Lost in translation?
+							- Works great in GDocs, but: in code?
+							- Difficulties: large teams, oceans, team members
 						</aside>
 					</section>
 				</section>
@@ -152,10 +128,25 @@
 				</section>
 
 				<!-- slide.tools -->
-				<section data-state="sl-tools" data-timing="60">
+				<section data-state="sl-tools" data-timing="60" data-transition="fade">
 					<h3>Tools</h3>
 					<p>Some of the tools we use at Parkside:</p>
-					<img id="tools" src="img/logos_tools.svg" alt="Some tools in use at Parkside" />
+
+					<div id="tools" class="stretch">
+						<img class="fragment tool-icons" data-fragment-index="3" src="img/logos_tools05.svg" alt="Some tools in use at Parkside"
+						/>
+						<img class="fragment tool-icons" data-fragment-index="2" src="img/logos_tools01.svg" alt="Some tools in use at Parkside"
+						/>
+						<img class="fragment tool-icons" data-fragment-index="1" src="img/logos_tools02.svg" alt="Some tools in use at Parkside"
+						/>
+						<img class="fragment tool-icons" data-fragment-index="1" src="img/logos_tools03.svg" alt="Some tools in use at Parkside"
+						/>
+						<img class="fragment tool-icons" data-fragment-index="2" src="img/logos_tools06.svg" alt="Some tools in use at Parkside"
+						/>
+						<img class="fragment tool-icons" data-fragment-index="3" src="img/logos_tools04.svg" alt="Some tools in use at Parkside"
+						/>
+					</div>
+
 
 					<aside class="notes" data-markdown>
 						- Anyone used something else from the list in your projects?
@@ -224,7 +215,6 @@
 					<h3>Feature branch workflow</h3>
 
 					<img src="img/infographic_n2.svg" />
-
 					<aside class="notes" data-markdown>
 						- Q: Anyone used any git workflow in your projects?
 					</aside>
@@ -433,20 +423,19 @@
 
 					<aside class="notes" data-markdown>
 						- Anecdote Chris: How I deleted the entire CVS repo on my first day</p>
-						- Nelle: 12 years at Parkside
-						- Chris: 5 years
 					</aside>
 				</section>
 
 
 				<!-- slide.company -->
 				<section data-state="sl-company" data-timing="50" data-background="img/leafs.jpg" data-background-transition="fade-in">
+
 					<h3>We are Parkside</h3>
 					<p>45+ employees / 15 nations / 18 languages / international clients / large-scale projects / headquarters @Graz</p>
-
 					<br/>
 					<h5>Feel like talking?</h5>
-					<p>Swing by and let's pursue the conversation! We will be at the Parkside stand the whole afternoon, find us @<i>awesome-location-desc-goes-here</i>						</p>
+					<p>Swing by and let's pursue the conversation! We will be at the Parkside stand the whole afternoon, find us @</p>
+					<a id="booth-button">Tent 1 - Booth 68</a>
 
 					<aside class="notes" data-markdown>
 						### Claims
@@ -485,18 +474,25 @@
 					</aside>
 				</section>
 
+				<!-- slide.merci -->
+				<section data-state="sl-merci" data-transition="none-out">
+					<h3>danke / thank you / kiitos / merci / hvala<br/>gracias / شكرا / tack / obrigado</h3>
+					<br/>
+					<h4>Parkside is hiring</h4>
+					<p>
+						https://parkside.at/en/careers<br/> work@parkside.at
+					</p>
+				</section>
 
 				<!-- slide.merci -->
-				<section data-state="sl-merci" data-timing="60" data-background="img/parkside_team.jpg">
+				<section data-state="sl-merci-bgnd" data-transition="none" data-background="img/parkside_team.jpg" data-background-transition="fade"
+				 data-transition-speed="slow">
 					<h3>danke / thank you / kiitos / merci / hvala<br/>gracias / شكرا / tack / obrigado</h3>
-					<div id="hiring">
-						<h4>Parkside is hiring</h4>
-						<p>
-							https://parkside.at/en/careers<br/> work@parkside.at
-						</p>
-					</div>
-
-					<aside class="notes" data-markdown>Notes go here.</aside>
+					<br/>
+					<h4>Parkside is hiring</h4>
+					<p>
+						https://parkside.at/en/careers<br/> work@parkside.at
+					</p>
 				</section>
 			</div>
 		</div>
