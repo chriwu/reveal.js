@@ -2,6 +2,8 @@
 
 This repo contains a slide-deck based on the reveal.js presentation framework. The corresponding speech is being held at the [Teconomy Graz 2017](https://iaeste.at/en/teconomy_graz).
 
+See the movie clip [here](https://vimeo.com/227564960).
+
 
 ## Introduction
 
